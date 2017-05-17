@@ -19,12 +19,17 @@ header {
 nav {
     flex: 2;
     text-align: right;
+    padding-right: 23px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     padding-left: 33px;
+}
+
+.logo h6 {
+    padding-left: 13px;
 }
 
 /* text */
