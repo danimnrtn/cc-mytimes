@@ -6,9 +6,9 @@ header, h6 {
   display: flex;
 }
 
-.logo {
-  display: flex;
-  flex: 1;
+header {
+    display: flex;
+    align-items: center;
 }
 
 nav {
