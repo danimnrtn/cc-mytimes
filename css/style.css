@@ -6,14 +6,14 @@ header, h6 {
   display: flex;
 }
 
-header img {
+.logo {
   display: flex;
   flex: 1;
 }
 
 nav {
   display: flex;
-  flex; 4;
+  flex: 3;
 }
 
 /* text */
