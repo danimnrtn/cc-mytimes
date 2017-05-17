@@ -14,6 +14,7 @@ header, h6 {
 header {
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 
 nav {
