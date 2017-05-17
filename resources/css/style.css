@@ -14,7 +14,8 @@ h6 {
 }
 
 header {
-display: flex;
+ position: fixed;
+ display: flex;
  width: 100%;
  font-family: Verdana;
  font-size: 14px;
@@ -22,14 +23,15 @@ display: flex;
  background-color: white;
  align-items: center;
  text-align: right;
+ height: 75px;
  border-bottom: 1px solid black;
- margin: -8px 0px 0px -10px;
  padding-top: 5px;
  position: fixed;
  z-index: 20;
 }
 
 nav {
+    flex-grow: 1;
     flex: 2;
     text-align: right;
     padding-right: 23px;
@@ -58,6 +60,7 @@ h3 {
   font-weight: bold;
   font-size: 40px;
   color: white;
+  padding: 20px;
 }
 
 h5 {
@@ -65,6 +68,7 @@ h5 {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  padding: 15px;
 }
 
 h4 {
@@ -130,6 +134,7 @@ a {
 
 main {
   display: flex;
+  padding-top: 75px;
 }
 
 .column {
@@ -146,51 +151,56 @@ main {
 
 .column.medium {
   width: 300px;
+  padding: 0 5 px;
 }
 
 .column.small {
   width: 240px;
 }
 
+.large {
+  padding-right: 20px;
+}
+
+.small {
+  padding-left: 20px;
+}
+
 #main {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
 }
 
 #main .title {
   display: flex;
-    height: 300px;
-    background-image: url("../media/img-story-main.png");
-    align-items: center;
+  height: 300px;
+  background-image: url("../media/img-story-main.png");
+  align-items: center;
 }
 
-.stories {
+#story-1, #story-2, #story-3 {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
 }
 
-#orca {
+#orca, #burger {
   display: flex;
-}
-
-#burger {
-  display: flex;
-}
-
-#story-1 {
-  display: flex;
-}
-
-#story-2 {
-  display: flex;
-}
-
-#story-3 {
-  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 #story-4 {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
 }
 
 #story-1 .title {
@@ -210,8 +220,12 @@ main {
 
 .footer {
   display: flex;
-  height: 300px;
-  background-color: MediumAquamarine;
-  margin: auto;
-  align-items: center;
+    height: 300px;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: mediumaquamarine;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
