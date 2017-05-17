@@ -14,7 +14,8 @@ header, h6 {
 header {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
 }
 
 nav {
@@ -85,7 +86,7 @@ a {
 }
 
 .news {
-  background-color: WhiteSmoke;
+ background-color: WhiteSmoke;
  font-family: Verdana;
  font-size: 12px;
  color: DimGray;
@@ -119,27 +120,20 @@ a {
 
 /* Containers */
 
-#header {
-  display: flex;
-  height: auto;
-  max-height: 100px;
-  border-bottom: 1px solid black;
-}
-
 .container {
   display: flex;
 }
 
 .column {
   display: flex;
-  justify-content: flex-start;
-  margin: 0 auto;
-  flex-direction: column;
 }
 
 .column.large {
   width: 630px;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .column.medium {
@@ -150,17 +144,20 @@ a {
   width: 240px;
 }
 
+#main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 #main .title {
-  display: inline-flex;
+  background-image: url("../media/main.png");
+  position: relative;
+  display: flex;
   width: 100%;
-  background-color: black;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
-}
-
-#main {
-  display: flex;
 }
 
 .stories {
