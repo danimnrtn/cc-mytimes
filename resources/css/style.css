@@ -68,7 +68,6 @@ h5 {
   font-size: 30px;
   color: white;
   padding: 15px;
-  text-align: center;
 }
 
 h4 {
@@ -214,43 +213,71 @@ main {
   align-items: center;
 }
 
-#stories-ob, #earth-cam {
+#grid {
+  display: flex;
+  flex-direction: row;
+}
+
+#stories1, #stories2 {
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  flex-wrap: nowrap;
-  margin: 0;
   width: 100%
+}
+
+#stories1 {
+  padding-right: 10px;
+}
+
+#stories2 {
+  padding-left: 10px;
+}
+
+#storieslrg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #orca, #burger, #story-2 .headline, #story-3 .headline {
   display: flex;
   margin: 0;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 #story-2 .headline {
   background-image: url("../media/img-story-2.png");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 300px;
+  text-align: center;
 }
 
 #story-3 .headline {
   background-image: url("../media/img-story-3.png");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 300px;
+  text-align: center;
 }
 
 #story-1 .title {
-  display: flex;
   background-image: url("../media/img-story-1.png");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 300px;
-  padding-right: 10px;
+  text-align: center;
 }
 
 .footer {
