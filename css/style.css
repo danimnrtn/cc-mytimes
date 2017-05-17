@@ -16,6 +16,11 @@ nav {
   flex: 3;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 /* text */
 h6 {
   color: mediumaquamarine;
