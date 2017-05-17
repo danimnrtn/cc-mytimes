@@ -1,4 +1,4 @@
-/* text */
+/* header */
 #header, h6 {
   font-family: Verdana;
   font-size: 14px;
@@ -6,6 +6,17 @@
   display: flex;
 }
 
+.header img {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  flex; 4;
+}
+
+/* text */
 h6 {
   color: mediumaquamarine;
   margin: 20px;
@@ -103,7 +114,7 @@ a {
 
 .column {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
   flex-direction: column;
 }
@@ -122,9 +133,12 @@ a {
 }
 
 #main .title {
-  display: flex;
+  display: inline-flex;
   width: 100%;
-  background-image: url("../media/img-story-main.png");
+  background-color: black;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
 }
 
 #main {
